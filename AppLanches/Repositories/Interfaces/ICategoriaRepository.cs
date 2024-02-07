@@ -1,6 +1,8 @@
-﻿namespace AppLanches.Repositories.Interfaces
+﻿using AppLanches.Models;
+
+namespace AppLanches.Repositories.Interfaces;
+
+public interface ICategoriaRepository
 {
-    public interface ICategoriaRepository
-    {
-    }
+    IEnumerable<Categoria> Categorias { get; }
 }
